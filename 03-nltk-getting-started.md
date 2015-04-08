@@ -32,6 +32,8 @@ This imports a bunch of full-texts of various books, Moby Dick, Sense and Sensib
 
 The variables `text1` ... `textn` are special data objects containing a data structure (much like a list) that `nltk` tools know how to use.
 
+## 
+
 ## Concordance
 
 ```

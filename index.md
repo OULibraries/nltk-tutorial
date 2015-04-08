@@ -1,7 +1,7 @@
 ---
 layout: lesson
 title: NLTK Python
-keywords: ["NLTK,"Python","Natural Language", "Text", "Text Processing"]
+keywords: ["NLTK", "Python","Natural Language", "Text", "Text Processing"]
 ---
 > ## Prerequisites
 > This lesson assumes very little prior knowledge, it can be helpful for the
