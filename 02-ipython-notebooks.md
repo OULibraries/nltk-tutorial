@@ -1,3 +1,8 @@
+---
+layout: topic
+title: Getting started with ipython notebooks
+---
+
 ## Getting started with ipython notebooks
 
 ### Startup
