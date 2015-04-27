@@ -3,16 +3,23 @@ layout: topic
 title: Getting python installed
 ---
 
-
-
-
-
 ## Lists and Loops
 
 
 ~~~{.python}
 names = ['Turing', 'Hopper', 'Babbage', 'Lovelace', 'Hamilton']
+
+numlist = [1,2,3,4]
+
+mixedlist = ['a','b','c',1,2,3]
 ~~~
+
+Lists can have heterogeneous data types. The data types of each
+element do not have to be the same. So a list is a way to organize a
+collection of things. List items can be any python object. In the
+example above our lists contained integers and a mix of integers and
+single character strings.
+
 
 
 ~~~{.python}
@@ -22,17 +29,32 @@ names[-1]
 ~~~
 
 
-~~~{.python}
 
+~~~{.python}
 for person in names :
    print person
+~~~
+
+
+### Slicing a list
+
+~~~{.python}
+mixedlist[0:2]
+
+mixedlist[3:-1]
+
+mixelist[3:]
 
 ~~~
 
 
+
+## Strings
+
 ```
-mystring = "The quick brown fox jumped over the lazy dog"
+sentence = "The quick brown fox jumped over the lazy dog."
 ```
+
 
 Strings are objects that have methods, we can call those methods to manipulate our string.
 
@@ -62,7 +84,16 @@ mystring.upper()
 2
 ```
 
-### Chaining
+
+### Slicing a string
+
+
+firstword = sentence[0:2]
+lastword = sentence[-4:0]
+
+
+
+### Chaining Methods
 
 ```
 mystring.count('i')
@@ -73,17 +104,6 @@ mystring.lower().count('i')
 ```
 
 
-## Lists
-
-
-```
-mylist = [1,2,3,4]
-
-otherlist = ['a','b','c',1,2,3]
-
-```
-
-Lists can have heterogeneous data types. The data types of each element do not have to be the same. So a list is a way to organize a collection of things. List items can be any python object. In the example above our lists contained integers and a mix of integers and single character strings.
 
 We can turn a string of words into a list using the `.split()` method.
 
@@ -94,57 +114,3 @@ mystring.split(' ')
 
 mytokens = mystring.split(' ')
 ```
-
-## Tokenizing
-
-NLTK contains a better tokenizer
-
-```
-newtokens = nltk.word_tokenize('''This is a sentence full of tokens, by tokenizing the string, I can make a list of the tokens''')
-
-print newtokens
-['This',
- 'is',
- 'a',
- 'sentence',
- 'full',
- 'of',
- 'tokens',
- ',',
- 'by',
- 'tokenizing',
- 'the',
- 'string',
- ',',
- 'I',
- 'can',
- 'make',
- 'a',
- 'list',
- 'of',
- 'the',
- 'tokens']
- ```
-
-
-
-## Slicing
-
-~~~{.python}
-firstword = sentence[0:2]
-
-firstword = sentence[:2]
-
-last = sentence[:-1]
-
-lastword = sentence[-4:]
-~~~
-
-
-We can slice parts of a list out using a special notation. We use a pair of square brackets `[]` and a range of values we'd like to extract from the list.
-
-```
-newtokens[0:4]
-```
-
-Start at index zero and go up to but not including index 4.
