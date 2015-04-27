@@ -32,7 +32,7 @@ This imports a bunch of full-texts of various books, Moby Dick, Sense and Sensib
 
 The variables `text1` ... `textn` are special data objects containing a data structure (much like a list) that `nltk` tools know how to use.
 
-## 
+##
 
 ## Concordance
 
@@ -67,7 +67,7 @@ ed with hoops and armed with ribs of whale ." -- RAPE OF THE LOCK . " If we com
 contemptible in the comparison . The whale is doubtless the largest animal in c
 ```
 
-This performs an analysis of the context of the word "whale" within the text of the novel Moby Dick. It shows us the first 25 time the word occured
+This performs an analysis of the context of the word "whale" within the text of the novel Moby Dick. It shows us the first 25 time the word occurred
 
 If we want to know more about the function `concordance()` we can access some online help.
 
@@ -84,7 +84,7 @@ Word matching is not case-sensitive.
 :seealso: ``ConcordanceIndex``
 ```
 
-We can see in the line labeld Definition that the function `concordance()` takes three parameters, a word of interest, a width of output context and a number of lines to show.
+We can see in the line labled Definition that the function `concordance()` takes three parameters, a word of interest, a width of output context and a number of lines to show.
 
 ## Challenge {.challenge}
 
