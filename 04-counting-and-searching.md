@@ -15,6 +15,9 @@ print mytext
 
 Running len() on a string counts characters, on a list of tokens, it counts words.
 
+```
+
+```
 
 A simple way to tokenize text is to use the string method `.split()` to split on the character ' ' (space). This is not going to remove punctuation like a more sophisticated tokenizer, but it is a quick and dirty way to go from a string to a tokenized list.
 
@@ -33,3 +36,5 @@ len(tokens)
 ## Using NLTK to count things:
 
 fd = nltk.FreqDist(tokens)
+
+This gives us `FreqDist()` object

@@ -12,6 +12,38 @@ import nltk
 
 What does this do? Python uses import as a way to include *libraries* into the current *namespace*. This just makes it available to us to refer to, so that python knows where to find it.
 
+
+## Tokenizing
+
+NLTK contains a better tokenizer
+
+```
+newtokens = nltk.word_tokenize('''This is a sentence full of tokens, by tokenizing the string, I can make a list of the tokens''')
+
+print newtokens
+['This',
+ 'is',
+ 'a',
+ 'sentence',
+ 'full',
+ 'of',
+ 'tokens',
+ ',',
+ 'by',
+ 'tokenizing',
+ 'the',
+ 'string',
+ ',',
+ 'I',
+ 'can',
+ 'make',
+ 'a',
+ 'list',
+ 'of',
+ 'the',
+ 'tokens']
+ ```
+
 ## Getting some text loaded
 
 The NLTK library comes with a tool that can help us to download various texts and corpora that can be used as references for various kinds of Natural Language processing.
@@ -32,7 +64,6 @@ This imports a bunch of full-texts of various books, Moby Dick, Sense and Sensib
 
 The variables `text1` ... `textn` are special data objects containing a data structure (much like a list) that `nltk` tools know how to use.
 
-##
 
 ## Concordance
 
@@ -98,7 +129,6 @@ Using Moby Dick `text1`, see if you can do the following:
 
 ```
 text1.similar('whale')
-
 
 ship boat sea time captain deck world man pequod other whales air crew head water line thing side way wind
 
