@@ -8,23 +8,26 @@ title: Counting and searching
 Text as a string can be counted, the length is the number of total characters, including whitespace.
 
 Example:
-~~~{.python}
+~~~ {.python}
 mytext = len('some text as a string')
 print mytext
 ~~~
 
 Running len() on a string counts characters, on a list of tokens, it counts words.
 
-~~~{.python}
+~~~ {.python}
 mytext = ['word1','word2']
 
 len(mytext)
+~~~
+
+~~~ {.output}
 2
 ~~~
 
 A simple way to tokenize text is to use the string method `.split()` to split on the character ' ' (space). This is not going to remove punctuation like a more sophisticated tokenizer, but it is a quick and dirty way to go from a string to a tokenized list.
 
-~~~{.python}
+~~~ {.python}
 # Simple way to tokenize
 tokens = mytext.split(' ')
 
@@ -46,7 +49,7 @@ fd = nltk.FreqDist(tokens)
 This gives us `FreqDist()` object
 
 We can use this `fd` object now to look at the specifics of the frequency distribution of a text.
-~~~{.python}
+~~~ {.python}
 fd.<tab>
 
 fd.keys()
@@ -62,7 +65,7 @@ fd.plot()
 
 ## Get length of each word
 
-~~~{.python}
+~~~ {.python}
 lengths = [len(w) for w in text6 ]
 lenfd = nltk.FreqDist(lengths)
 fd.tabulate()
@@ -72,7 +75,7 @@ fd.tabulate()
 
 Removing punctuation.
 
-~~~{.python}
+~~~ {.python}
 
 onlyalpha = [w for w in text6 if w.isalpha()]
 
@@ -83,7 +86,7 @@ fd.plot(10)
 
 Make all words lowercase
 
-~~~{.python}
+~~~ {.python}
 
 onlylower = [w.lower() for w in onlyalpha]
 
@@ -91,7 +94,7 @@ onlylower = [w.lower() for w in onlyalpha]
 
 Together
 
-~~~{.python}
+~~~ {.python}
 onlyalphalower = [w.lower() for wi in text6 if w.isalpha()]
 ~~~
 
@@ -99,13 +102,13 @@ onlyalphalower = [w.lower() for wi in text6 if w.isalpha()]
 
 Using python sets, analagous to mathematical sets, allowing only one record for each unique item encountered.
 
-~~~{.python}
+~~~ {.python}
 set(text6)
 ~~~
 
 ## Stop words
 
-~~~{.python}
+~~~ {.python}
 mystops = ['the', 'it','she', 'he']
 mycleantext = [w for w in text6 if w not in mystops]
 

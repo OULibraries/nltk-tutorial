@@ -6,9 +6,9 @@ title: NLTK Overview
 
 ## Importing the NLTK toolkit
 
-```
+~~~ {.python}
 import nltk
-```
+~~~
 
 What does this do? Python uses import as a way to include *libraries* into the current *namespace*. This just makes it available to us to refer to, so that python knows where to find it.
 
@@ -17,10 +17,13 @@ What does this do? Python uses import as a way to include *libraries* into the c
 
 NLTK contains a better tokenizer
 
-```
+~~~ {.python}
 newtokens = nltk.word_tokenize('''This is a sentence full of tokens, by tokenizing the string, I can make a list of the tokens''')
 
 print newtokens
+~~~
+
+~~~ {.output}
 ['This',
  'is',
  'a',
@@ -42,23 +45,25 @@ print newtokens
  'of',
  'the',
  'tokens']
- ```
+
+~~~
 
 ## Getting some text loaded
 
 The NLTK library comes with a tool that can help us to download various texts and corpora that can be used as references for various kinds of Natural Language processing.
 
-```
+~~~ {.python}
 nltk.download()
-```
+~~~
+
 
 Select "All Packages" and click Download
 
 ## We now have data
 
-```
+~~~ {.python}
 from nltk.book import *
-```
+~~~
 
 This imports a bunch of full-texts of various books, Moby Dick, Sense and Sensibility, The Book of Genesis etc, Inaugural Address Corpus etc. This provides a convenient way for us to begin testing some NL concepts in Python.
 
@@ -67,8 +72,12 @@ The variables `text1` ... `textn` are special data objects containing a data str
 
 ## Concordance
 
-```
+~~~ {.python}
+
 text1.concordance("Whale")
+~~~
+
+~~~ {.output}
 
 Displaying 25 of 1226 matches:
 s , and to teach them by what name a whale - fish is to be called in our tongue
@@ -96,14 +105,17 @@ n master and kill this Sperma - ceti whale , for I could never hear of any of t
  . 1729 . "... and the breath of the whale is frequendy attended with such an i
 ed with hoops and armed with ribs of whale ." -- RAPE OF THE LOCK . " If we com
 contemptible in the comparison . The whale is doubtless the largest animal in c
-```
+~~~
 
 This performs an analysis of the context of the word "whale" within the text of the novel Moby Dick. It shows us the first 25 time the word occurred
 
 If we want to know more about the function `concordance()` we can access some online help.
 
-```
+~~~ {.python}
 ?text1.concordance
+~~~
+
+~~~ {.output}
 
 Type:        instancemethod
 String form: <bound method Text.concordance of <Text: Moby Dick by Herman Melville 1851>>
@@ -113,7 +125,7 @@ Docstring:
 Print a concordance for ``word`` with the specified context window.
 Word matching is not case-sensitive.
 :seealso: ``ConcordanceIndex``
-```
+~~~
 
 We can see in the line labled Definition that the function `concordance()` takes three parameters, a word of interest, a width of output context and a number of lines to show.
 
@@ -127,9 +139,10 @@ Using Moby Dick `text1`, see if you can do the following:
 
 ## Other analysis
 
-```
+~~~ {.python}
 text1.similar('whale')
+~~~
 
+~~~ {.output}
 ship boat sea time captain deck world man pequod other whales air crew head water line thing side way wind
-
-```
+~~~
