@@ -1,6 +1,8 @@
 ---
 layout: topic
 title: NLTK Overview
+subtitle: getting started with NLTK
+minutes: 30
 ---
 ## What is NLTK
 
