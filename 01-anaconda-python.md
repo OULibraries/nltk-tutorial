@@ -10,13 +10,13 @@ Download link
 
 ## Getting started with ipython notebooks
 
-### Startup
+## Startup
 
 Install anaconda, anaconda has NLTK installed by default.
 
     ipython notebook
 
-#### Overview
+## Overview
 ipython notebooks run as a web server on your local machine that we can connect
 to with our web browser. We use them because they simplify the type, save,
 execute cycle you'd typically use with a scripting language. We can do the save
