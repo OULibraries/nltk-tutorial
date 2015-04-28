@@ -57,4 +57,59 @@ fd.keys()[0:10]
 
 %pylab inline
 fd.plot()
+
+~~~
+
+## Get length of each word
+
+~~~{.python}
+lengths = [len(w) for w in text6 ]
+lenfd = nltk.FreqDist(lengths)
+fd.tabulate()
+~~~
+
+## Normalizing Text
+
+Removing punctuation.
+
+~~~{.python}
+
+onlyalpha = [w for w in text6 if w.isalpha()]
+
+fd = nltk.FreqDist(onlyalpha)
+fd.plot(10)
+
+~~~
+
+Make all words lowercase
+
+~~~{.python}
+
+onlylower = [w.lower() for w in onlyalpha]
+
+~~~
+
+Together
+
+~~~{.python}
+onlyalphalower = [w.lower() for wi in text6 if w.isalpha()]
+~~~
+
+## Only unique words
+
+Using python sets, analagous to mathematical sets, allowing only one record for each unique item encountered.
+
+~~~{.python}
+set(text6)
+~~~
+
+## Stop words
+
+~~~{.python}
+mystops = ['the', 'it','she', 'he']
+mycleantext = [w for w in text6 if w not in mystops]
+
+from nltk.corpus import stopwords
+stops = stopwords.words('english')
+mycleantext = [w for w in text6 if w not in stops]
 ~~~
