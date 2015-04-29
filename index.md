@@ -9,10 +9,11 @@ keywords: ["NLTK", "Python","Natural Language", "Text", "Text Processing"]
 
 ## Topics
 * [Anaconda Python](01-anaconda-python.html)
-* [iPython Notebooks](02-python-strings.html)
+* [Python Strings](02-python-strings.html)
 * [NLTK Getting Started](03-nltk-getting-started.html)
-* [Counting and Searchign](04-counting-and-searching.html)
+* [Counting and Searching](04-counting-and-searching.html)
 * [NLTK Getting Started](05-working-with-your-text.html)
+* [Bonus](06-bonus.html)
 
 ## Other Resources
 * [NLTK Book](http://www.nltk.org/book/)
