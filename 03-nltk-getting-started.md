@@ -55,7 +55,7 @@ print newtokens
 The NLTK library comes with a tool that can help us to download various texts and corpora that can be used as references for various kinds of Natural Language processing.
 
 ~~~ {.python}
-nltk.download()
+nltk.download(info_or_id="all")
 ~~~
 
 
