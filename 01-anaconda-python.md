@@ -35,5 +35,7 @@ executed by the ipython kernel, and could in principle be running on a remote
 computer.  
 
 ## Reference
-(Cheat sheet)[http://software-carpentry.org/v5/novice/ref/03-python.html]
-git clone git://git.pcp.io/pcp
+* [Python Cheat sheet](http://software-carpentry.org/v5/novice/ref/03-python.html)
+* [NLTK Cheat Sheet ](https://blogs.princeton.edu/etc/files/2014/03/Text-Analysis-with-NLTK-Cheatsheet.pdf)
+* [NLTK Book - 1st Edition](http://www.nltk.org/book_1ed/) - Python 2.x
+* [NLTK Book - 2nd Edition](http://www.nltk.org/book/) - Python 3.x
