@@ -1,9 +1,37 @@
 ---
 layout: topic
-title: Python Strings
+title: Python Basics
 ---
 
 ## Variables
+
+
+
+In Python, variables can be thought of as labels that we attach to values. 
+
+~~~{.python}
+my_name = "Logan"
+
+my_age = 38
+~~~
+
+
+and, unlike some programming languages, Python don't particularly care
+about what kind of thing we apply a label to. We can even move a label
+around and apply it to lots of kinds of things.
+
+~~~{.python}
+foo = "test"
+print foo
+foo = 10
+print foo
+foo = 37.2
+print foo
+
+~~~
+
+
+
 
 ## Lists 
 
@@ -13,6 +41,8 @@ They're also one of the most common ways to structure data in Python.
 
 
 ~~~{.python}
+['Turing', 'Hopper', 'Babbage', 'Lovelace', 'Hamilton']
+
 names = ['Turing', 'Hopper', 'Babbage', 'Lovelace', 'Hamilton']
 
 numlist = [1,2,3,4]
